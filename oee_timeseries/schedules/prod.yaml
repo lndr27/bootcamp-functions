@@ -1,0 +1,82 @@
+- name: Run calculations every 10 minutes for last hour of data
+  cron: "5-59/10 * * * *"
+  data:
+    sites:
+      - Oslo
+      - Hannover
+      - Nuremberg
+      - Marseille
+      - Houston
+      - Sao Paulo
+      - Kuala Lumpur
+      - Chicago
+      - Rotterdam
+      - London
+    lookback_minutes: 60
+
+- name: Run calculations once a day for 30 days history  (Oslo)
+  cron: "0 1 * * *"
+  data:
+    sites:
+      - Oslo
+    lookback_minutes: 7200
+
+- name: Run calculations once a day for 30 days history  (Nuremberg)
+  cron: "10 1 * * *"
+  data:
+    sites:
+      - Nuremberg
+    lookback_minutes: 7200
+
+- name: Run calculations once a day for 30 days history  (Marseille)
+  cron: "20 1 * * *"
+  data:
+    sites:
+      - Marseille
+    lookback_minutes: 7200
+
+- name: Run calculations once a day for 30 days history  (Houston)
+  cron: "30 1 * * *"
+  data:
+    sites:
+      - Houston
+    lookback_minutes: 7200
+
+- name: Run calculations once a day for 30 days history  (Sao Paulo)
+  cron: "40 1 * * *"
+  data:
+    sites:
+      - Sao Paulo
+    lookback_minutes: 7200
+
+
+- name: Run calculations once a day for 30 days history  (Kuala Lumpur)
+  cron: "50 1 * * *"
+  data:
+    sites:
+      - Kuala Lumpur
+    lookback_minutes: 7200
+
+
+- name: Run calculations once a day for 30 days history  (Chicago)
+  cron: "0 2 * * *"
+  data:
+    sites:
+      - Chicago
+    lookback_minutes: 7200
+
+
+- name: Run calculations once a day for 30 days history  (Rotterdam)
+  cron: "10 2 * * *"
+  data:
+    sites:
+      - Rotterdam
+    lookback_minutes: 7200
+
+
+- name: Run calculations once a day for 30 days history  (London)
+  cron: "20 2 * * *"
+  data:
+    sites:
+      - London
+    lookback_minutes: 7200
